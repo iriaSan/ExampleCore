@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <!-- Main Colors -->
+    <color name="colorPrimary">#57CE56</color>
+    <color name="colorPrimaryDark">#167D16</color>
+    <color name="colorPrimaryLight">#70B96F</color>
+    <color name="colorAccent">#343F4E</color>
+
+    <!-- Basic colors -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <!--Color gender -->
+    <color name="colorManGender">#85B1C8</color>
+    <color name="colorWomanGender">#F19BB5</color>
 </resources>

@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">ExampleCore</string>
+
+    <!-- ListUser Values -->
+    <string name="label_no_users">Parece que ahora mismo no podemos recuperar los usuarios</string>
+    <string name="label_name_user">Nombre</string>
+    <string name="label_title_toolbar_list_users">Users</string>
+
+
+    <!--DetailUser Values -->
+    <string name="label_location">Location</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_registered_date">Registered Date</string>
+    <string name="label_email">Email</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_mobile">Mobile</string>
 </resources>
