@@ -1,0 +1,3 @@
+[submodule "CexMobilityCoreKotlin"]
+	path = CexMobilityCoreKotlin
+	url = git@github.com:iriaSan/CexMobilityCoreKotlin.git

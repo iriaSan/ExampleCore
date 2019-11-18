@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvUser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/layoutClickable"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivUser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:transitionName="imageMain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_man" />
+
+
+        <TextView
+            android:id="@+id/tvNameUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Pepe"
+            android:maxLines="2"
+            android:textDirection="locale"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_normal"
+            app:layout_constraintTop_toTopOf="@id/ivUser"
+            app:layout_constraintStart_toEndOf="@id/ivUser"
+            app:layout_constraintEnd_toStartOf="@id/ivGender"
+            app:layout_constraintBottom_toTopOf="@id/tvEmailUser"/>
+
+
+        <TextView
+            android:id="@+id/tvEmailUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_normal"
+            android:maxLines="1"
+            android:textDirection="locale"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvNameUser"
+            app:layout_constraintStart_toStartOf="@id/tvNameUser"
+            app:layout_constraintEnd_toEndOf="@id/tvNameUser"
+            app:layout_constraintBottom_toTopOf="@id/tvPhoneUser"
+            tools:text="pepepepe@gmail.com"/>
+
+
+        <TextView
+            android:id="@+id/tvPhoneUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_normal"
+            android:textDirection="locale"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvEmailUser"
+            app:layout_constraintStart_toStartOf="@id/tvEmailUser"
+            app:layout_constraintEnd_toEndOf="@id/tvEmailUser"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="000000000"/>
+
+
+        <ImageView
+            android:id="@+id/ivGender"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:padding="2dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/ic_woman"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
